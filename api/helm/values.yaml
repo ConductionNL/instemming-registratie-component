@@ -7,7 +7,7 @@ settings:
   projectName: irc
   name: irc
   title: Instemmingen Registratie Component
-  version: V.0.1
+  version: V1.0
   majorVersion: v1
   id: 
   description: '&#039;Naast deze JSON rest API is er ook een [graphql](/graphql) interface beschikbaar.&#039;'
@@ -15,7 +15,7 @@ settings:
   repro: https://github.com/ConductionNL/instemmingservice
   demo: irc.zaakonline.nl
   container: https://hub.docker.com/repository/docker/conduction/irc-php
-  domain: dev
+  domain: conduction.nl
   subdomain: irc
   subpath: irc
   subpathRouting: true
