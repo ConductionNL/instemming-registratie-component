@@ -2,15 +2,49 @@ apiVersion: v1
 entries:
   irc:
   - apiVersion: v1
-    appVersion: V.0.1
-    created: "2020-06-22T07:07:10.2028561Z"
+    appVersion: V1.0
+    created: "2020-12-01T09:54:04.3217702Z"
     description: '&#039;Naast deze JSON rest API is er ook een [graphql](/graphql)
       interface beschikbaar.&#039;'
-    digest: 2771b7b4d0cb3dc1beb77c091793b306708c0eb023b11e06eeda2c17e9169594
+    digest: 2ac64c31206f4ceaa6826f537669b2af98f6f209144f9367ba289cabf6d5bd70
     home: irc.zaakonline.nl
     icon: irc.zaakonline.nl
     name: irc
     urls:
     - irc-0.1.0.tgz
     version: 0.1.0
-generated: "2020-06-22T07:07:10.1938419Z"
+  postgresql:
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 11.10.0
+    created: "2020-12-01T09:54:04.3358283Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: Chart for PostgreSQL, an object-relational database management system
+      (ORDBMS) with an emphasis on extensibility and on standards-compliance.
+    digest: eebe8f456cf98d5927a35666d1d899174dc4d3e09f26788033f761527bc90749
+    home: https://github.com/bitnami/charts/tree/master/bitnami/postgresql
+    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-110x117.png
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    - sql
+    - replication
+    - cluster
+    maintainers:
+    - email: containers@bitnami.com
+      name: Bitnami
+    - email: cedric@desaintmartin.fr
+      name: desaintmartin
+    name: postgresql
+    sources:
+    - https://github.com/bitnami/bitnami-docker-postgresql
+    - https://www.postgresql.org/
+    urls:
+    - charts/postgresql-10.1.1.tgz
+    version: 10.1.1
+generated: "2020-12-01T09:54:04.3105344Z"
