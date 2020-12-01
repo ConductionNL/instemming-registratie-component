@@ -43,7 +43,19 @@
 					],
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "45c1a4b6-59d3-4a6e-86bf-88a872f35845",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
 						"header": [
@@ -89,7 +101,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/assents?",
+							"raw": "{{baseUrl}}/assents",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -440,7 +452,19 @@
 					],
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "45c1a4b6-59d3-4a6e-86bf-88a872f35845",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
 						},
 						"method": "POST",
 						"header": [
@@ -486,7 +510,10 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"My Assent\",\n    \"requester\": \"My requester\",\n    \"description\": \"This is the best assent ever\",\n    \"request\": \"https://www.example.org/requests/1\",\n    \"property\": \"My requester's partner\",\n    \"process\": \"https://www.example.org/processes/1\",\n    \"contact\": \"https://www.example.org/contacts/1\",\n    \"person\": \"http://www.example.org/people/1\",\n    \"status\": \"requested\"\n}"
+							"raw": "{\n    \"name\": \"My Assent\",\n    \"requester\": \"My requester\",\n    \"description\": \"This is the best assent ever\",\n    \"request\": \"https://www.example.org/requests/1\",\n    \"property\": \"My requester's partner\",\n    \"process\": \"https://www.example.org/processes/1\",\n    \"contact\": \"https://www.example.org/contacts/1\",\n    \"person\": \"http://www.example.org/people/1\",\n    \"status\": \"requested\"\n}",
+							"options": {
+								"raw": {}
+							}
 						},
 						"url": {
 							"raw": "{{baseUrl}}/assents",
@@ -740,7 +767,19 @@
 					],
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "45c1a4b6-59d3-4a6e-86bf-88a872f35845",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
 						},
 						"method": "GET",
 						"header": [
@@ -1024,7 +1063,19 @@
 					],
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "45c1a4b6-59d3-4a6e-86bf-88a872f35845",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
 						},
 						"method": "PUT",
 						"header": [
@@ -1070,7 +1121,10 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"My Assent\",\n    \"requester\": \"My requester\",\n    \"description\": \"This is not the best assent ever\",\n    \"request\": \"https://www.example.org/requests/1\",\n    \"property\": \"My requester's partner\",\n    \"process\": \"https://www.example.org/processes/1\",\n    \"contact\": \"https://www.example.org/contacts/1\",\n    \"person\": \"http://www.example.org/people/1\",\n    \"status\": \"requested\"\n}"
+							"raw": "{\n    \"name\": \"My Assent\",\n    \"requester\": \"My requester\",\n    \"description\": \"This is not the best assent ever\",\n    \"request\": \"https://www.example.org/requests/1\",\n    \"property\": \"My requester's partner\",\n    \"process\": \"https://www.example.org/processes/1\",\n    \"contact\": \"https://www.example.org/contacts/1\",\n    \"person\": \"http://www.example.org/people/1\",\n    \"status\": \"requested\"\n}",
+							"options": {
+								"raw": {}
+							}
 						},
 						"url": {
 							"raw": "{{baseUrl}}/assents/{{assent}}",
@@ -1300,319 +1354,6 @@
 							],
 							"cookie": [],
 							"body": ""
-						}
-					]
-				},
-				{
-					"name": "Updates the Assent resource.",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "39e005bb-2feb-45de-8867-916d7a4c082a",
-								"exec": [
-									"// example using pm.response.to.have\r",
-									"pm.test(\"response is ok\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"// example using response assertions\r",
-									"pm.test(\"response should be okay to process\", function () {\r",
-									"    pm.response.to.not.be.error;\r",
-									"    pm.response.to.not.have.jsonBody(\"error\");\r",
-									"});\r",
-									"\r",
-									"// example using pm.response.to.be*\r",
-									"pm.test(\"response must be valid and have a body\", function () {\r",
-									"     // assert that the status code is 200\r",
-									"     pm.response.to.be.ok; // info, success, redirection, clientError,  serverError, are other variants\r",
-									"     // assert that the response has a valid JSON body\r",
-									"     pm.response.to.be.withBody;\r",
-									"     pm.response.to.be.json; // this assertion also checks if a body  exists, so the above check is not needed\r",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "PATCH",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "",
-								"description": "The JWT of the entity performing the request"
-							},
-							{
-								"key": "API-Version",
-								"value": "",
-								"description": "The version of the API conform [Landelijke API-strategie.](https://geonovum.github.io/KP-APIs/#versioning)"
-							},
-							{
-								"key": "X-NLX-Logrecord-ID",
-								"value": "",
-								"description": "A  globally unique id of the request, which makes a request traceable throughout the network."
-							},
-							{
-								"key": "X-NLX-Request-Process-Id",
-								"value": "",
-								"description": "A process id for purpose registration (doelbinding)"
-							},
-							{
-								"key": "X-NLX-Request-Data-Elements",
-								"value": "",
-								"description": "A list of requested data elements"
-							},
-							{
-								"key": "X-NLX-Request-Data-Subject",
-								"value": "",
-								"description": "A key-value list of data subjects related to this request. e.g. `bsn=12345678, kenteken=ab-12-fg`"
-							},
-							{
-								"key": "X-NLX-Audit-Clarification",
-								"value": "",
-								"description": "A clarification as to why a request has been made  (doelbinding)"
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/vnd.api+json"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"description\": \"This is the best patched assent ever\"\n}"
-						},
-						"url": {
-							"raw": "{{baseUrl}}/assents/{{assent}}",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"assents",
-								"{{assent}}"
-							]
-						}
-					},
-					"response": [
-						{
-							"name": "Resource not found",
-							"originalRequest": {
-								"method": "PATCH",
-								"header": [
-									{
-										"key": "Authorization",
-										"value": "",
-										"description": "The JWT of the entity performing the request"
-									},
-									{
-										"key": "API-Version",
-										"value": "",
-										"description": "The version of the API conform [Landelijke API-strategie.](https://geonovum.github.io/KP-APIs/#versioning)"
-									},
-									{
-										"key": "X-NLX-Logrecord-ID",
-										"value": "",
-										"description": "A  globally unique id of the request, which makes a request traceable throughout the network."
-									},
-									{
-										"key": "X-NLX-Request-Process-Id",
-										"value": "",
-										"description": "A process id for purpose registration (doelbinding)"
-									},
-									{
-										"key": "X-NLX-Request-Data-Elements",
-										"value": "",
-										"description": "A list of requested data elements"
-									},
-									{
-										"key": "X-NLX-Request-Data-Subject",
-										"value": "",
-										"description": "A key-value list of data subjects related to this request. e.g. `bsn=12345678, kenteken=ab-12-fg`"
-									},
-									{
-										"key": "X-NLX-Audit-Clarification",
-										"value": "",
-										"description": "A clarification as to why a request has been made  (doelbinding)"
-									},
-									{
-										"key": "Authorization",
-										"value": "",
-										"description": "The JWT of the entity performing the request"
-									},
-									{
-										"key": "API-Version",
-										"value": "",
-										"description": "The version of the API conform [Landelijke API-strategie.](https://geonovum.github.io/KP-APIs/#versioning)"
-									},
-									{
-										"key": "X-NLX-Logrecord-ID",
-										"value": "",
-										"description": "A  globally unique id of the request, which makes a request traceable throughout the network."
-									},
-									{
-										"key": "X-NLX-Request-Process-Id",
-										"value": "",
-										"description": "A process id for purpose registration (doelbinding)"
-									},
-									{
-										"key": "X-NLX-Request-Data-Elements",
-										"value": "",
-										"description": "A list of requested data elements"
-									},
-									{
-										"key": "X-NLX-Request-Data-Subject",
-										"value": "",
-										"description": "A key-value list of data subjects related to this request. e.g. `bsn=12345678, kenteken=ab-12-fg`"
-									},
-									{
-										"key": "X-NLX-Audit-Clarification",
-										"value": "",
-										"description": "A clarification as to why a request has been made  (doelbinding)"
-									},
-									{
-										"key": "Authorization",
-										"value": "",
-										"description": "The JWT of the entity performing the request"
-									},
-									{
-										"key": "API-Version",
-										"value": "",
-										"description": "The version of the API conform [Landelijke API-strategie.](https://geonovum.github.io/KP-APIs/#versioning)"
-									},
-									{
-										"key": "X-NLX-Logrecord-ID",
-										"value": "",
-										"description": "A  globally unique id of the request, which makes a request traceable throughout the network."
-									},
-									{
-										"key": "X-NLX-Request-Process-Id",
-										"value": "",
-										"description": "A process id for purpose registration (doelbinding)"
-									},
-									{
-										"key": "X-NLX-Request-Data-Elements",
-										"value": "",
-										"description": "A list of requested data elements"
-									},
-									{
-										"key": "X-NLX-Request-Data-Subject",
-										"value": "",
-										"description": "A key-value list of data subjects related to this request. e.g. `bsn=12345678, kenteken=ab-12-fg`"
-									},
-									{
-										"key": "X-NLX-Audit-Clarification",
-										"value": "",
-										"description": "A clarification as to why a request has been made  (doelbinding)"
-									}
-								],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"name\": \"<string>\",\n    \"requester\": \"<string>\",\n    \"description\": \"<string>\",\n    \"request\": \"<string>\",\n    \"property\": \"<string>\",\n    \"process\": \"<string>\",\n    \"contact\": \"<string>\",\n    \"person\": \"<string>\",\n    \"status\": \"<string>\"\n}"
-								},
-								"url": {
-									"raw": "{{baseUrl}}/assents/:id",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"assents",
-										":id"
-									],
-									"variable": [
-										{
-											"key": "id"
-										}
-									]
-								}
-							},
-							"status": "Not Found",
-							"code": 404,
-							"_postman_previewlanguage": "text",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "text/plain"
-								}
-							],
-							"cookie": [],
-							"body": ""
-						},
-						{
-							"name": "Invalid input",
-							"originalRequest": {
-								"method": "PATCH",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"name\": \"<string>\",\n    \"requester\": \"<string>\",\n    \"description\": \"<string>\",\n    \"request\": \"<string>\",\n    \"property\": \"<string>\",\n    \"process\": \"<string>\",\n    \"contact\": \"<string>\",\n    \"person\": \"<string>\",\n    \"status\": \"<string>\"\n}"
-								},
-								"url": {
-									"raw": "{{baseUrl}}/assents/:id",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"assents",
-										":id"
-									],
-									"variable": [
-										{
-											"key": "id"
-										}
-									]
-								}
-							},
-							"status": "Bad Request",
-							"code": 400,
-							"_postman_previewlanguage": "text",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "text/plain"
-								}
-							],
-							"cookie": [],
-							"body": ""
-						},
-						{
-							"name": "Assent resource updated",
-							"originalRequest": {
-								"method": "PATCH",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "{\n    \"name\": \"<string>\",\n    \"requester\": \"<string>\",\n    \"description\": \"<string>\",\n    \"request\": \"<string>\",\n    \"property\": \"<string>\",\n    \"process\": \"<string>\",\n    \"contact\": \"<string>\",\n    \"person\": \"<string>\",\n    \"status\": \"<string>\"\n}"
-								},
-								"url": {
-									"raw": "{{baseUrl}}/assents/:id",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"assents",
-										":id"
-									],
-									"variable": [
-										{
-											"key": "id"
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/hal+json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n \"name\": \"<string>\",\n \"requester\": \"<string>\",\n \"id\": \"<string>\",\n \"token\": \"<string>\",\n \"description\": \"<string>\",\n \"request\": \"<string>\",\n \"property\": \"<string>\",\n \"process\": \"<string>\",\n \"contact\": \"<string>\",\n \"person\": \"<string>\",\n \"status\": \"<string>\"\n}"
 						}
 					]
 				},
@@ -1636,7 +1377,19 @@
 					],
 					"request": {
 						"auth": {
-							"type": "noauth"
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "45c1a4b6-59d3-4a6e-86bf-88a872f35845",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "Authorization",
+									"type": "string"
+								}
+							]
 						},
 						"method": "DELETE",
 						"header": [
@@ -1853,6 +1606,21 @@
 			"protocolProfileBehavior": {}
 		}
 	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "45c1a4b6-59d3-4a6e-86bf-88a872f35845",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "Authorization",
+				"type": "string"
+			}
+		]
+	},
 	"event": [
 		{
 			"listen": "prerequest",
@@ -1877,10 +1645,9 @@
 	],
 	"variable": [
 		{
-			"id": "ba93313e-a4e5-415e-9fcf-8d0ed6c9b652",
+			"id": "0c761ab0-b82b-4485-9e43-c9da55fbb3d0",
 			"key": "baseUrl",
-			"value": "http://localhost:8080",
-			"type": "string"
+			"value": "localhost"
 		}
 	],
 	"protocolProfileBehavior": {}
