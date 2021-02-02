@@ -119,4 +119,4 @@ dependsOn:
 
 installations:
     - type: helm
-      url: "https://github.com/ConductionNL/instemming-registratie-component/raw/master/api/helm/irc-0.1.0.tgz"
+      url: "https://github.com/ConductionNL/installation-management-component/raw/master/api/helm/irc-0.1.0.tgz"
