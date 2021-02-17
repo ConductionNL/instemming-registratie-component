@@ -12,7 +12,7 @@ info:
     - Docker Image: [online](https://hub.docker.com/repository/docker/conduction/irc-php) 
     - Datamodel: [postman](schema/irc.postman_collection.json) / [oas](schema/openapi.yaml) / [pdf](schema/datamodel.pdf) / [modelio (zip)](schema/Datamodel_Modelio.zip) 
     
-    'Naast deze JSON rest API is er ook een [graphql](/graphql) interface beschikbaar.'         
+    Naast deze JSON rest API is er ook een [graphql](/graphql) interface beschikbaar.         
     
 paths:
   /assents:
@@ -3959,12 +3959,12 @@ definitions:
         description: 'The moment this request was created'
         type: string
         format: date-time
-        example: '2020-12-14 14:06:13'
+        example: '2021-02-17 23:56:27'
       dateModified:
         description: 'The moment this request last Modified'
         type: string
         format: date-time
-        example: '2020-12-14 14:06:13'
+        example: '2021-02-17 23:56:27'
     required: []
   AuditTrail-write:
     properties:
@@ -4012,12 +4012,12 @@ definitions:
         description: 'The moment this request was created'
         type: string
         format: date-time
-        example: '2020-12-14 14:06:13'
+        example: '2021-02-17 23:56:27'
       dateModified:
         description: 'The moment this request last Modified'
         type: string
         format: date-time
-        example: '2020-12-14 14:06:13'
+        example: '2021-02-17 23:56:27'
     required: []
   ChangeLog-write:
     properties:
@@ -4028,6 +4028,12 @@ definitions:
         maxLength: 2555
     required: []
 tags:
+  -
+    name: Notifications
+    description: Authorization
+    externalDocs:
+      -
+        url: 'http://docs.my-api.com/pet-operations.htm'
   -
     name: Assent
     description: |

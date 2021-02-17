@@ -3,10 +3,10 @@ entries:
   irc:
   - apiVersion: v1
     appVersion: V1.0
-    created: "2020-12-14T14:32:03.2792335Z"
-    description: '&#039;Naast deze JSON rest API is er ook een [graphql](/graphql)
-      interface beschikbaar.&#039;'
-    digest: 7f4bb0f25510e7e56be11fa7a5507c0539f58a4a8c3973ac840fdebadbd19752
+    created: "2021-02-17T23:55:26.0872487Z"
+    description: Naast deze JSON rest API is er ook een [graphql](/graphql) interface
+      beschikbaar.
+    digest: b8c12a47a020519418205c9999ea7988e1ac8ccd9ae9ccdbf3c459132ed57b48
     home: irc.zaakonline.nl
     icon: irc.zaakonline.nl
     name: irc
@@ -18,7 +18,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 11.10.0
-    created: "2020-12-14T14:32:03.2930702Z"
+    created: "2021-02-17T23:55:26.0984582Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -47,4 +47,4 @@ entries:
     urls:
     - charts/postgresql-10.1.1.tgz
     version: 10.1.1
-generated: "2020-12-14T14:32:03.2645547Z"
+generated: "2021-02-17T23:55:26.0708912Z"
