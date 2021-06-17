@@ -1,5 +1,15 @@
 # Contact Catalogue
 
+[comment]: <> ([![FOSSA Status]&#40;https://app.fossa.com/api/projects/git%2Bgithub.com%2FConductionNL%2Finstemming-registratie-component.svg?type=shield&#41;]&#40;https://app.fossa.com/projects/git%2Bgithub.com%2FConductionNL%2Finstemming-registratie-component?ref=badge_shield&#41;)
+[![BCH compliance](https://bettercodehub.com/edge/badge/ConductionNL/instemming-registratie-component?branch=master)](https://bettercodehub.com/results/ConductionNL/instemming-registratie-component)
+[![StyleCI](https://github.styleci.io/repos/355113584/shield?branch=master)](https://github.styleci.io/repos/355113584)
+[![Docker Image CI](https://github.com/ConductionNL/instemming-registratie-component/actions/workflows/dockerimage.yml/badge.svg)](https://github.com/ConductionNL/instemming-registratie-component/actions/workflows/dockerimage.yml)
+[![Artifact HUB](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/instemming-registratie-component)](https://artifacthub.io/packages/helm/instemming-registratie-component/instemming-registratie-component)
+[![Componenten Catalogus](https://img.shields.io/badge/vng--componentencatalogus-posted-green)](https://componentencatalogus.commonground.nl/componenten/180?)
+
+[comment]: <> ([![codecov]&#40;https://codecov.io/gh/ConductionNL/instemming-registratie-component/branch/master/graph/badge.svg?token=UP5F3S1SVS&#41;]&#40;https://codecov.io/gh/ConductionNL/instemming-registratie-component&#41;)
+[![Status badge](https://shields.api-test.nl/endpoint.svg?style=for-the-badge&url=https%3A//api-test.nl/api/v1/provider-latest-badge/5e111d60-c72b-4c0d-ae58-1307dad945ca/)](https://api-test.nl/server/4/e91ee073-8277-4578-bbcc-6dc9f409a904/5e111d60-c72b-4c0d-ae58-1307dad945ca/latest/)
+
 Description
 ----
 The Consent Registration Component (Instemming Registratie Component) aims to record consents in relation to resources. The consent is given by a legal entity. Consents can be specific (this request may be made on my behalf), role-related (I agree to be a witness for this marriage), or generic. Generic consents are issued to a person or legal entity in relation to a request type (this person may make public area reports on my behalf).
