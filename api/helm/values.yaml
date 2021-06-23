@@ -8,7 +8,7 @@ settings:
   name: irc
   version: V1.0
   majorVersion: v1
-  description: 'Naast deze JSON rest API is er ook een [graphql](/graphql) interface beschikbaar.'
+  description: '&#039;Naast deze JSON rest API is er ook een [graphql](/graphql) interface beschikbaar.&#039;'
   repro: https://github.com/ConductionNL/instemmingservice
   demo: irc.zaakonline.nl
   domain: zuid-drecht.nl
