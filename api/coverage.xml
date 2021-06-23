@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1624438723">
+  <project timestamp="1624438723">
+    <file name="/srv/api/src/Controller/UserController.php">
+      <class name="App\Controller\UserController" namespace="global">
+        <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+      </class>
+      <line num="24" type="method" name="login" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <line num="33" type="method" name="logout" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="35" type="stmt" count="0"/>
+      <metrics loc="37" ncloc="25" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+    </file>
+    <file name="/srv/api/src/DataFixtures/AppFixtures.php">
+      <class name="App\DataFixtures\AppFixtures" namespace="global">
+        <metrics complexity="3" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="0" elements="9" coveredelements="0"/>
+      </class>
+      <line num="15" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="17" type="stmt" count="0"/>
+      <line num="18" type="stmt" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <line num="21" type="method" name="load" visibility="public" complexity="2" crap="6" count="0"/>
+      <line num="24" type="stmt" count="0"/>
+      <line num="25" type="stmt" count="0"/>
+      <line num="28" type="stmt" count="0"/>
+      <line num="29" type="stmt" count="0"/>
+      <metrics loc="30" ncloc="29" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="0" elements="9" coveredelements="0"/>
+    </file>
+    <file name="/srv/api/src/Entity/Assent.php">
+      <class name="App\Entity\Assent" namespace="global">
+        <metrics complexity="27" methods="27" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="40" coveredstatements="0" elements="67" coveredelements="0"/>
+      </class>
+      <line num="245" type="method" name="getId" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="247" type="stmt" count="0"/>
+      <line num="250" type="method" name="getToken" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="252" type="stmt" count="0"/>
+      <line num="255" type="method" name="setToken" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="257" type="stmt" count="0"/>
+      <line num="259" type="stmt" count="0"/>
+      <line num="262" type="method" name="getName" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="264" type="stmt" count="0"/>
+      <line num="267" type="method" name="setName" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="269" type="stmt" count="0"/>
+      <line num="271" type="stmt" count="0"/>
+      <line num="274" type="method" name="getDescription" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="276" type="stmt" count="0"/>
+      <line num="279" type="method" name="setDescription" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="281" type="stmt" count="0"/>
+      <line num="283" type="stmt" count="0"/>
+      <line num="286" type="method" name="getRequest" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="288" type="stmt" count="0"/>
+      <line num="291" type="method" name="setRequest" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="293" type="stmt" count="0"/>
+      <line num="295" type="stmt" count="0"/>
+      <line num="298" type="method" name="getForwardUrl" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="300" type="stmt" count="0"/>
+      <line num="303" type="method" name="setForwardUrl" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="305" type="stmt" count="0"/>
+      <line num="307" type="stmt" count="0"/>
+      <line num="310" type="method" name="getProcess" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="312" type="stmt" count="0"/>
+      <line num="315" type="method" name="setProcess" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="317" type="stmt" count="0"/>
+      <line num="319" type="stmt" count="0"/>
+      <line num="322" type="method" name="getProperty" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="324" type="stmt" count="0"/>
+      <line num="327" type="method" name="setProperty" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="329" type="stmt" count="0"/>
+      <line num="331" type="stmt" count="0"/>
+      <line num="334" type="method" name="getContact" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="336" type="stmt" count="0"/>
+      <line num="339" type="method" name="setContact" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="341" type="stmt" count="0"/>
+      <line num="343" type="stmt" count="0"/>
+      <line num="346" type="method" name="getPerson" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="348" type="stmt" count="0"/>
+      <line num="351" type="method" name="setPerson" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="353" type="stmt" count="0"/>
+      <line num="355" type="stmt" count="0"/>
+      <line num="358" type="method" name="getStatus" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="360" type="stmt" count="0"/>
+      <line num="363" type="method" name="setStatus" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="365" type="stmt" count="0"/>
+      <line num="367" type="stmt" count="0"/>
+      <line num="370" type="method" name="getRequester" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="372" type="stmt" count="0"/>
+      <line num="375" type="method" name="setRequester" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="377" type="stmt" count="0"/>
+      <line num="379" type="stmt" count="0"/>
+      <line num="382" type="method" name="getDateCreated" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="384" type="stmt" count="0"/>
+      <line num="387" type="method" name="setDateCreated" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="389" type="stmt" count="0"/>
+      <line num="391" type="stmt" count="0"/>
+      <line num="394" type="method" name="getDateModified" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="396" type="stmt" count="0"/>
+      <line num="399" type="method" name="setDateModified" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="401" type="stmt" count="0"/>
+      <line num="403" type="stmt" count="0"/>
+      <metrics loc="405" ncloc="207" classes="1" methods="27" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="40" coveredstatements="0" elements="67" coveredelements="0"/>
+    </file>
+    <file name="/srv/api/src/Kernel.php">
+      <class name="App\Kernel" namespace="global">
+        <metrics complexity="6" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="20" coveredstatements="0" elements="24" coveredelements="0"/>
+      </class>
+      <line num="18" type="method" name="registerBundles" visibility="public" complexity="3" crap="12" count="0"/>
+      <line num="20" type="stmt" count="0"/>
+      <line num="21" type="stmt" count="0"/>
+      <line num="22" type="stmt" count="0"/>
+      <line num="23" type="stmt" count="0"/>
+      <line num="26" type="stmt" count="0"/>
+      <line num="28" type="method" name="getProjectDir" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="30" type="stmt" count="0"/>
+      <line num="33" type="method" name="configureContainer" visibility="protected" complexity="1" crap="2" count="0"/>
+      <line num="35" type="stmt" count="0"/>
+      <line num="36" type="stmt" count="0"/>
+      <line num="37" type="stmt" count="0"/>
+      <line num="39" type="stmt" count="0"/>
+      <line num="40" type="stmt" count="0"/>
+      <line num="41" type="stmt" count="0"/>
+      <line num="42" type="stmt" count="0"/>
+      <line num="43" type="stmt" count="0"/>
+      <line num="45" type="method" name="configureRoutes" visibility="protected" complexity="1" crap="2" count="0"/>
+      <line num="47" type="stmt" count="0"/>
+      <line num="49" type="stmt" count="0"/>
+      <line num="50" type="stmt" count="0"/>
+      <line num="51" type="stmt" count="0"/>
+      <line num="52" type="stmt" count="0"/>
+      <metrics loc="53" ncloc="53" classes="1" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="20" coveredstatements="0" elements="24" coveredelements="0"/>
+    </file>
+    <file name="/srv/api/src/Repository/AssentRepository.php">
+      <class name="App\Repository\AssentRepository" namespace="global">
+        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+      </class>
+      <line num="17" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
+      <line num="19" type="stmt" count="0"/>
+      <line num="20" type="stmt" count="0"/>
+      <metrics loc="50" ncloc="17" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+    </file>
+    <metrics files="5" loc="575" ncloc="331" classes="5" methods="36" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="71" coveredstatements="0" elements="107" coveredelements="0"/>
+  </project>
+</coverage>
