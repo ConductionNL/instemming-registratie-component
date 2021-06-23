@@ -3,13 +3,26 @@ entries:
   irc:
   - apiVersion: v1
     appVersion: V1.0
-    created: "2021-06-18T07:02:42.0784331Z"
-    description: Naast deze JSON rest API is er ook een [graphql](/graphql) interface
-      beschikbaar.
-    digest: b546eb773ad9612edc0546d80477f4096b936f453313136fc583f0739f5786a0
+    created: "2021-06-23T07:44:10.3424376Z"
+    description: '&#039;Naast deze JSON rest API is er ook een [graphql](/graphql)
+      interface beschikbaar.&#039;'
+    digest: c4b44b619a336a01de3e46c14e36e160ba2c71682c1bde8ac224ff134073761c
     home: irc.zaakonline.nl
     icon: irc.zaakonline.nl
+    keywords:
+    - commonground
+    - haven
+    - nlx
+    - component
+    maintainers:
+    - email: ruben@conduction.nl
+      name: Ruben van der Linde
+    - email: info@conduction.nl
+      name: Conduction
     name: irc
+    sources:
+    - https://commonground.conduction.nl/
+    - https://www.commonground.nl/
     urls:
     - irc-0.1.0.tgz
     version: 0.1.0
@@ -18,7 +31,7 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 11.10.0
-    created: "2021-06-18T07:02:42.0917023Z"
+    created: "2021-06-23T07:44:10.3479047Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -47,4 +60,4 @@ entries:
     urls:
     - charts/postgresql-10.1.1.tgz
     version: 10.1.1
-generated: "2021-06-18T07:02:42.0613402Z"
+generated: "2021-06-23T07:44:10.3329232Z"
